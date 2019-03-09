@@ -5,7 +5,7 @@ global.self = require('./self.shim')
 const chai = require('chai')
 const spies = require('chai-spies')
 const {expect} = chai
-const EthereumTx = require('ethereumjs-tx')
+const EthereumTx = require('wanchainjs-tx')
 const assert = require('assert')
 const HDKey = require('hdkey')
 const TrezorConnect = require('trezor-connect').default
@@ -13,12 +13,12 @@ const TrezorConnect = require('trezor-connect').default
 const TrezorKeyring = require('../')
 
 const fakeAccounts = [
-    '0xF30952A1c534CDE7bC471380065726fa8686dfB3',
-    '0x44fe3Cf56CaF651C4bD34Ae6dbcffa34e9e3b84B',
-    '0x8Ee3374Fa705C1F939715871faf91d4348D5b906',
+    '0xf30952a1C534cde7Bc471380065726FA8686DFb3',
+    '0x44FE3cF56cAf651c4Bd34aE6DBCFFA34E9E3B84b',
+    '0x8eE3374fA705c1f939715871FAF91D4348d5B906',
     '0xEF69e24dE9CdEe93C4736FE29791E45d5D4CFd6A',
     '0xC668a5116A045e9162902795021907Cb15aa2620',
-    '0xbF519F7a6D8E72266825D770C60dbac55a3baeb9',
+    '0xBf519f7A6d8e72266825d770c60DBAC55A3BAEB9',
     '0x0258632Fe2F91011e06375eB0E6f8673C0463204',
     '0x4fC1700C0C61980aef0Fb9bDBA67D8a25B5d4335',
     '0xeEC5D417152aE295c047FB0B0eBd7c7090dDedEb',
@@ -41,6 +41,7 @@ const fakeTx = new EthereumTx({
     data: '0x7f7465737432000000000000000000000000000000000000000000000000000000600057',
     // EIP 155 chainId - mainnet: 1, ropsten: 3
     chainId: 1,
+    Txtype: 1,
 })
 
 chai.use(spies)

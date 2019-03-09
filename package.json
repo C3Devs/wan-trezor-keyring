@@ -1,7 +1,7 @@
 {
-  "name": "eth-trezor-keyring",
+  "name": "wan-trezor-keyring",
   "version": "0.3.0",
-  "description": "A MetaMask compatible keyring, for trezor hardware wallets",
+  "description": "A WanMask compatible keyring, for trezor hardware wallets",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -10,24 +10,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metamask/eth-trezor-keyring.git"
+    "url": "git+https://github.com/C3devs/wan-trezor-keyring.git"
   },
   "keywords": [
-    "ethereum",
+    "wanchain",
     "keyring",
     "trezor",
-    "metamask"
+    "wanmask"
   ],
   "author": "Bruno Barbieri",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/metamask/eth-trezor-keyring/issues"
+    "url": "https://github.com/C3devs/wan-trezor-keyring/issues"
   },
-  "homepage": "https://github.com/metamask/eth-trezor-keyring#readme",
+  "homepage": "https://github.com/C3devs/wan-trezor-keyring#readme",
   "dependencies": {
     "eth-sig-util": "^1.4.2",
-    "ethereumjs-tx": "^1.3.4",
-    "ethereumjs-util": "^5.1.5",
+    "wanchainjs-tx": "^1.5.0",
+    "wanchainjs-util": "^5.2.1",
     "events": "^2.0.0",
     "hdkey": "0.8.0",
     "trezor-connect": "^7.0.1"
